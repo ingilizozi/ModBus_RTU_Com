@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>molecule1.ico</ApplicationIcon>
+    <StartupObject>ModBus_RTU_Com.Program</StartupObject>
+    <Authors>Osman ŞEN</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageIcon>molecule1.png</PackageIcon>
+    <PackageIconUrl />
+    <SignAssembly>false</SignAssembly>
+    <NeutralLanguage>ar-DZ</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0-preview.5.21301.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Modbus">
+      <HintPath>..\..\NModbus\source\src\MySample\bin\Release\Modbus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Release\netcoreapp3.1\icons\molecule1.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
